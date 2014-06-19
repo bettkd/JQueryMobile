@@ -1,43 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My mobile app..</title>
+	<title>Infrastructure Tool App</title>
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
 </head>
 <body>
 
-	<div data-role="page" id="page1" data-theme="b">
+	<div data-role="page" id="home" data-theme="b">
 		<div data-role="header">
-			<h1>My page!</h1>
+			<h1>ITT - Home</h1>
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#page1" data-icon="home" data-transition="none">Home</a></li>
-					<li><a href="#page2" data-icon="grid" data-transition="none">Contact</a></li>
+					<li><a href="#home" data-icon="home" data-transition="none">Home</a></li>
+					<li><a href="#app" data-icon="gear" data-transition="none">Application</a></li>
+					<li><a href="#contact" data-icon="grid" data-transition="none">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 		<div data-role="main" class="ui-content">
-			<h1>Hello World!</h1>
-			<p>Welcome to page one.</p>
+			<h1>Simplicity is what we yearn for!</h1>
+			<p>Where other people see limitations, we see posibilities. </br>
+				Infrustructure Test Tool Application is an efficient server administrator tool that can be used test and diagnose if there are any problems in a server to help with the fixing. It provides invaluable insight on the state of each host machine by running a set of commands in just a simple click of a mouse.</br>
+				In the end, it is all about technology working hard for you, and not the other way round.</br>
+			</p>
 		</div>
 		<div data-role="footer">
 			<h1>&copy; Dominic Bett</h1>
 		</div>
 	</div>
 
-	<div data-role="page" id="page2" data-theme="b">
+	<div data-role="page" id="app" data-theme="b">
 		<div data-role="header">
-			<h1>My page!</h1>
+			<h1>ITT - App</h1>
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#page1" data-icon="home" data-transition="none">Home</a></li>
-					<li><a href="#page2" data-icon="grid" data-transition="none">Contact</a></li>
+					<li><a href="#home" data-icon="home" data-transition="none">Home</a></li>
+					<li><a href="#app" data-icon="gear" data-transition="none">Application</a></li>
+					<li><a href="#contact" data-icon="grid" data-transition="none">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 		<div data-role="main" class="ui-content">
-			<h1>Hello World!</h1>
-			<p>Welcome to page two.</p>
+			<form>
+				<div>
+				<input type="button" type="input" data-inline="true" value="Run"/>
+				<input type="button" data-inline="true" value="Stop"/>
+				<input type="button" data-inline="true" value="Hosts"/>
+				<input type="button" data-inline="true" value="Tests"/>
+				<input type="button" data-inline="true" value="Save"/>
+				<input type="button" data-inline="true" value="Load"/></div>
+
+				<div>
+					<div data-role="collapsible" data-mini="true">
+						<h3>Test Group1</h3>
+						<label><input type="checkbox" name="checkbox-0" data-mini="true"/> Test1 </label>
+						<label><input type="checkbox" name="checkbox-0" data-mini="true"/> Test2 </label>
+						<label><input type="checkbox" name="checkbox-0" data-mini="true"/> Test3 </label>
+						<label><input type="checkbox" name="checkbox-0" data-mini="true"/> Test4 </label>
+					</div>
+
+					<div data-role="collapsible" data-mini="true">
+						<h3>TestGroup2</h3>
+						<label><input type="checkbox" name="checkbox-0" data-mini="true"/> Test1 </label>
+						<label><input type="checkbox" name="checkbox-0" data-mini="true"/> Test2 </label>
+						<label><input type="checkbox" name="checkbox-0" data-mini="true"/> Test3 </label>
+						<label><input type="checkbox" name="checkbox-0" data-mini="true"/> Test4 </label>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div data-role="footer">
+			<h1>&copy; Dominic Bett</h1>
+		</div>
+	</div>
+
+	<div data-role="page" id="contact" data-theme="b">
+		<div data-role="header">
+			<h1>ITT - Contacts</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-transition="none">Home</a></li>
+					<li><a href="#app" data-icon="gear" data-transition="none">Application</a></li>
+					<li><a href="#contact" data-icon="grid" data-transition="none">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="main" class="ui-content">
+			<h1>Feedback? Questions?</h1>
+			<p>Dominic Bett</br>
+				Dell Inc.</br>
+				DCS Solutions Engineering Team</br>
+				<a href="mailto:Dominic_Bett@Dell.com" target="_top">Email</a>
+				| <a href="https://twitter.com/dommie_bett">Tweet</a> 
+				| Call: 843.574.3153</br>
+			</p>
 		</div>
 		<div data-role="footer">
 			<h1>&copy; Dominic Bett</h1>
