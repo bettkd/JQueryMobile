@@ -42,29 +42,45 @@
 		</div>
 		<div data-role="main" class="ui-content">
 			<form>
-				<div>
-				<input type="button" type="input" data-inline="true" value="Run"/>
-				<input type="button" data-inline="true" value="Stop"/>
-				<input type="button" data-inline="true" value="Hosts"/>
-				<input type="button" data-inline="true" value="Tests"/>
-				<input type="button" data-inline="true" value="Save"/>
-				<input type="button" data-inline="true" value="Load"/></div>
+				<div class="ui-grid-b">
+					<div class="ui-block-a"><input type="button" data-mini="true" data-mini="true" value="Run"/></div>
+					<div class="ui-block-b"><input type="button" data-mini="true" value="Stop"/></div>
+					<div class="ui-block-c"><input type="button" data-mini="true" value="Hosts"/></div>
+					<div class="ui-block-a"><input type="button" data-mini="true" value="Tests"/></div>
+					<div class="ui-block-b"><input type="button" data-mini="true" value="Save"/></div>
+					<div class="ui-block-c"><input type="button" data-mini="true" value="Load"/></div>
+				</div>
 
-				<div>
-					<div data-role="collapsible" data-mini="true">
-						<h3>Test Group1</h3>
-						<label><input type="checkbox" name="checkbox-0" data-mini="true"/> Test1 </label>
-						<label><input type="checkbox" name="checkbox-0" data-mini="true"/> Test2 </label>
-						<label><input type="checkbox" name="checkbox-0" data-mini="true"/> Test3 </label>
-						<label><input type="checkbox" name="checkbox-0" data-mini="true"/> Test4 </label>
+				<div class="ui-grid-a">
+					<div class="ui-block-a" data-role="collapsible" data-mini="true">
+						<h3>Host Group</h3>
+						<fieldset data-role="controlgroup">
+							<label><input type="checkbox" name="checkbox-00" data-mini="true"/> Host1 </label>
+							<label><input type="checkbox" name="checkbox-01" data-mini="true"/> Host2 </label>
+							<label><input type="checkbox" name="checkbox-02" data-mini="true"/> Host3 </label>
+							<label><input type="checkbox" name="checkbox-03" data-mini="true"/> Host4 </label>
+						</fieldset>
 					</div>
 
-					<div data-role="collapsible" data-mini="true">
-						<h3>TestGroup2</h3>
-						<label><input type="checkbox" name="checkbox-0" data-mini="true"/> Test1 </label>
-						<label><input type="checkbox" name="checkbox-0" data-mini="true"/> Test2 </label>
-						<label><input type="checkbox" name="checkbox-0" data-mini="true"/> Test3 </label>
-						<label><input type="checkbox" name="checkbox-0" data-mini="true"/> Test4 </label>
+					<div data-role="collapsible-set" class="ui-block-b">
+						<div data-role="collapsible" data-mini="true">
+							<h3>TestGroup1</h3>
+							<fieldset data-role="controlgroup">
+								<label><input type="checkbox" name="checkbox-10" data-mini="true"/> Test1 </label>
+								<label><input type="checkbox" name="checkbox-11" data-mini="true"/> Test2 </label>
+								<label><input type="checkbox" name="checkbox-12" data-mini="true"/> Test3 </label>
+								<label><input type="checkbox" name="checkbox-13" data-mini="true"/> Test4 </label>
+							</fieldset>
+						</div>
+						<div data-role="collapsible" data-mini="true">
+							<h3>TestGroup2</h3>
+							<fieldset data-role="controlgroup">
+								<label><input type="checkbox" name="checkbox-21" data-mini="true"/> Test1 </label>
+								<label><input type="checkbox" name="checkbox-22" data-mini="true"/> Test2 </label>
+								<label><input type="checkbox" name="checkbox-23" data-mini="true"/> Test3 </label>
+								<label><input type="checkbox" name="checkbox-24" data-mini="true"/> Test4 </label>
+							</fieldset>
+						</div>
 					</div>
 				</div>
 			</form>
